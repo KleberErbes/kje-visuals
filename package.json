@@ -1,13 +1,23 @@
 {
   "name": "kje-visuals-portfolio",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "chave": "node scripts/criar-chave.mjs",
     "dev": "vercel dev",
-    "verificar": "tsc --noEmit"
+    "verificar": "tsc --noEmit",
+    "test": "tsc --noEmit false --outDir .test-build && node --test tests/shop.test.cjs"
   },
-  "dependencies": { "@supabase/supabase-js": "^2.45.0", "zod": "3.25.76" },
-  "devDependencies": { "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
 }

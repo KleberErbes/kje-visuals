@@ -1,5 +1,10 @@
 # KJE VISUALS — Vercel + Supabase
 
+## Nova loja de fotos e vídeos
+
+Para ativar vendas por Pix com confirmação manual, siga **ATIVAR-LOJA.md**. A migração adicional fica em `supabase/loja.sql`; o painel da loja fica em `/admin/loja` e o catálogo em `/loja`.
+
+
 O Supabase guarda o banco, as mídias enviadas e o login do painel. O site em si (páginas) roda na Vercel, porque o Supabase não hospeda sites.
 
 ## 1. Supabase
@@ -20,6 +25,6 @@ No terminal da pasta: `npm install` e depois `npm run chave`. Guarde o valor de 
 Abra o endereço da Vercel numa aba anônima e o `/admin`, cole a chave e envie uma foto pequena primeiro, depois um vídeo. Salve, veja a prévia e publique.
 
 ## Limites
-- Plano gratuito do Supabase: 50 MB por arquivo, 1 GB de armazenamento e 5 GB de tráfego por mês. Acima disso, plano Pro.
+- O código limita cada envio a 50 MB (15 MB para fotos no painel antigo). Confira armazenamento, tráfego e limites atuais no painel do seu plano Supabase.
 - Os filmes que já vêm no projeto ficam na própria Vercel (pasta `public/assets`); só o que você enviar pelo painel vai para o Supabase.
 - O conteúdo editado no painel antigo (Cloudflare/ChatGPT) não é copiado: refaça as edições no painel novo.
