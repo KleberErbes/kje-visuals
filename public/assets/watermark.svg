@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="150" viewBox="0 0 320 150" fill="none">
+  <title>KJE VISUALS</title>
+  <defs>
+    <g id="logo">
+      <path d="M0 0h17v37L0 54ZM0 74 72 0h25L50 48l48 46H74L37 60 0 94ZM181 0h17v66c0 18-11 28-29 28h-32c-15 0-25-10-27-25h18c2 5 6 8 12 8h28c8 0 13-4 13-13ZM230 0h90l-15 17h-82v-7ZM230 39h90l-15 17h-82V46ZM230 77h90l-15 17h-82v-7Z" fill="currentColor"/>
+      <g stroke="currentColor" stroke-width="3.1" stroke-linejoin="round">
+        <path d="m2 123 10 22 10-22M57 123v22M112 124h-12a5 5 0 0 0 0 10h8a5 5 0 0 1 0 10H95M145 123v15a7 7 0 0 0 14 0v-15M191 145l10-22 10 22m-17-7h14M249 123v21h16M316 124h-12a5 5 0 0 0 0 10h8a5 5 0 0 1 0 10h-17"/>
+      </g>
+    </g>
+  </defs>
+  <use href="#logo" x="1.5" y="2" color="#000" opacity=".3"/>
+  <use href="#logo" color="#fff" opacity=".7"/>
+</svg>

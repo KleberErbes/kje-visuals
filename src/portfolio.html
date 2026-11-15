@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Paisagens, encontros e histórias vistos de outro ângulo. Explore os trabalhos de drone da KJE VISUALS, por Kléber Erbes.">
+  <meta property="og:title" content="KJE VISUALS | Um novo ponto de vista">
+  <meta property="og:description" content="Filmes aéreos. Paisagens, encontros e histórias vistos de outro ângulo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <title>KJE VISUALS | Um novo ponto de vista</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="{{HERO_COVER}}" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=editor1">
+  <script src="app.js?v=editor1" defer></script>
+<script type="application/json" id="media-data">{{ITEMS}}</script>
+</head>
+<body>{{PREVIEW}}
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs>
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="icon-arrow-down-right" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18h12V6"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-swipe" viewBox="0 0 24 24"><path d="M3 12h18M7 8l-4 4 4 4m10-8 4 4-4 4"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#trabalhos">Pular para os trabalhos</a>
+  <header class="header" id="header">
+    <a class="brand" href="#inicio" aria-label="KJE VISUALS | início"><span class="brand-main">KJE<span class="brand-dot">.</span></span><span class="brand-sub">VISUALS</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-menu"></use></svg></button>
+    <nav id="main-nav" aria-label="Navegação principal">
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#sobre">O olhar</a>
+      {{ADMIN_LINK}}
+      <a class="nav-instagram" href="https://www.instagram.com/kje.visuals/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <video class="hero-video" id="hero-video" muted loop playsinline preload="none" poster="{{HERO_COVER}}" aria-hidden="true" tabindex="-1" data-src="{{HERO_SRC}}"></video>
+      <div class="hero-shade"></div>
+      <div class="hero-topline"><span class="status-dot"></span> HISTÓRIAS VISTAS DO ALTO</div>
+      <div class="hero-content">
+        <div class="hero-title-wrap"><p class="eyebrow hero-label">KJE VISUALS <span class="label-separator" aria-hidden="true"></span> FILMES AÉREOS</p><h1 id="hero-title">Um novo<br>ponto de vista<span class="title-period">.</span></h1></div>
+        <div class="hero-intro"><p>Paisagens, encontros e histórias.<br>Vistos de onde poucos olham.</p><a class="explore-link" href="#trabalhos"><span class="circle-arrow" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-down-right"></use></svg></span><span>Explore os trabalhos</span></a></div>
+      </div>
+      <div class="hero-footer"><a class="scroll-hint" href="#trabalhos"><span class="scroll-line" aria-hidden="true"></span> ROLE PARA DESCOBRIR</a><span class="hero-film">{{HERO_TITLE}}</span><button class="video-toggle" id="video-toggle" type="button" aria-label="Pausar vídeo de fundo"><span id="video-toggle-icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pause"></use></svg></span><span id="video-toggle-text">PAUSAR</span></button></div>
+    </section>
+
+    <section class="portfolio section-pad" id="trabalhos" aria-labelledby="works-title">
+      <div class="section-kicker reveal"><span class="eyebrow">01 / PORTFÓLIO</span><span class="eyebrow dim">UM RECORTE DE CADA VOO</span></div>
+      <div class="section-heading reveal"><h2 id="works-title">Cada voo,<br><span class="muted-text">uma nova história.</span></h2><p>Um instante muda quando a gente<br>muda a forma de olhar.</p></div>
+      <div class="filter-bar reveal"><div class="filters" role="group" aria-label="Filtrar trabalhos"><button type="button" class="filter active" aria-controls="film-grid" data-filter="all" aria-pressed="true">Todos <sup>{{TOTAL}}</sup></button><button type="button" class="filter" aria-controls="film-grid" data-filter="paisagens" aria-pressed="false">Paisagens e viagens <sup>{{LAND}}</sup></button><button type="button" class="filter" aria-controls="film-grid" data-filter="eventos" aria-pressed="false">Eventos <sup>{{EVENT}}</sup></button></div><span class="film-count" id="film-count" aria-live="polite">{{COUNT}}</span></div>
+      <div class="film-grid" id="film-grid">{{CARDS}}
+      </div>
+    </section>
+
+    <section class="about section-pad" id="sobre" aria-labelledby="about-title">
+      <div class="about-image reveal"><img src="{{ABOUT_SRC}}" alt="{{ABOUT_ALT}}" loading="lazy" width="1200" height="1500"><span class="image-corner top-left"></span><span class="image-corner bottom-right"></span><span class="about-image-caption">UM OUTRO ÂNGULO. A MESMA ESSÊNCIA.</span></div>
+      <div class="about-copy reveal"><span class="eyebrow">02 / POR TRÁS DO OLHAR</span><h2 id="about-title">A perspectiva<br>muda.<br><span class="muted-text">A história fica.</span></h2><div class="about-body"><p>Sou Kléber Erbes, o olhar por trás da KJE VISUALS. Uso o drone para registrar paisagens, viagens e a energia dos encontros.</p><p>Meu portfólio reúne esses instantes: a cidade que se revela do alto, a natureza em movimento e os detalhes de cada evento.</p><a class="text-link" href="https://www.instagram.com/kje.visuals/" target="_blank" rel="noopener noreferrer">Acompanhe meu olhar <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></span></a></div></div>
+    </section>
+
+    <section class="instagram section-pad" id="instagram" aria-labelledby="instagram-title"><div class="section-kicker reveal"><span class="eyebrow">03 / CONTINUE ACOMPANHANDO</span><span class="eyebrow dim">NOVOS ÂNGULOS, A CADA VOO.</span></div><div class="instagram-content reveal"><div><h2 id="instagram-title">O próximo voo<br>começa por lá.</h2><p>Novos filmes, bastidores e um pouco do que vejo do alto.</p></div><a class="instagram-button" href="https://www.instagram.com/kje.visuals/" target="_blank" rel="noopener noreferrer" aria-label="Acompanhar @kje.visuals no Instagram"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-instagram"></use></svg><span>@kje.visuals</span><span class="instagram-arrow" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></span></a></div></section>
+  </main>
+
+  <footer class="footer section-pad"><a href="#inicio" class="footer-wordmark" aria-label="KJE VISUALS | voltar ao início">KJE VISUALS<span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right"></use></svg></span></a><div class="footer-bottom"><p>© <span id="year">2026</span> KJE VISUALS</p><p>POR KLÉBER ERBES</p><a href="#inicio">VOLTAR AO TOPO <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-up"></use></svg></a></div></footer>
+
+  <dialog class="film-dialog" id="film-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><div><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2></div><button type="button" id="close-dialog" class="close-dialog" aria-label="Fechar vídeo"><span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg></span></button></div><div class="player-wrap"><img id="photo-player" hidden alt=""><div id="stage-watermark" hidden aria-hidden="true"></div><button id="stage-expand" class="stage-expand" type="button" hidden>Ampliar</button><video id="film-player" controls playsinline muted preload="none"></video><p id="player-error" hidden>Não foi possível carregar o vídeo. <a id="video-download" href="#" target="_blank" rel="noopener">Abrir o arquivo</a></p></div><div class="dialog-bottom"><p id="dialog-description"></p><p class="swipe-hint"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-swipe"></use></svg><span>Deslize para navegar</span></p><div class="dialog-navigation"><button type="button" id="previous-film" aria-label="Filme anterior"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg></button><span id="dialog-counter"></span><button type="button" id="next-film" aria-label="Próximo filme"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></button></div></div></dialog>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}.film-open{cursor:default}.filters{display:none}</style><div class="noscript-note">Ative o JavaScript para explorar os filmes neste site. Você também pode acompanhar os trabalhos em <a href="https://www.instagram.com/kje.visuals/">@kje.visuals</a>.</div></noscript>
+</body>
+</html>

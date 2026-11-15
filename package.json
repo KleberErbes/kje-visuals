@@ -1,0 +1,13 @@
+{
+  "name": "kje-visuals-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "chave": "node scripts/criar-chave.mjs",
+    "dev": "vercel dev",
+    "verificar": "tsc --noEmit"
+  },
+  "dependencies": { "@supabase/supabase-js": "^2.45.0", "zod": "3.25.76" },
+  "devDependencies": { "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

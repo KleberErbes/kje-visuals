@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "src": "/assets/hero.mp4",
+    "cover": "/assets/entre-montanhas.webp",
+    "title": "Entre montanhas"
+  },
+  "about": {
+    "src": "/assets/olhar.webp",
+    "alt": "Montanhas verdes e um rio em uma perspectiva aérea"
+  },
+  "items": [
+    {
+      "id": "entre-montanhas",
+      "kind": "video",
+      "title": "Entre montanhas",
+      "category": "paisagens",
+      "detail": "",
+      "description": "O rio, a cidade e as montanhas dividem o mesmo enquadramento.",
+      "alt": "Vista aérea de um rio, cidade e montanhas verdes sob nuvens",
+      "src": "/assets/entre-montanhas.mp4",
+      "cover": "/assets/entre-montanhas.webp",
+      "portrait": false,
+      "duration": 15,
+      "visible": true
+    },
+    {
+      "id": "em-movimento",
+      "kind": "video",
+      "title": "Em movimento",
+      "category": "eventos",
+      "detail": "Automotivo",
+      "description": "A energia da pista e do encontro em um filme cheio de movimento.",
+      "alt": "Encontro automotivo em uma pista cercada por árvores",
+      "src": "/assets/em-movimento.mp4",
+      "cover": "/assets/em-movimento.webp",
+      "portrait": false,
+      "duration": 20,
+      "visible": true
+    },
+    {
+      "id": "a-beira-mar",
+      "kind": "video",
+      "title": "À beira-mar",
+      "category": "paisagens",
+      "detail": "Filme vertical",
+      "description": "Um voo acompanhando o encontro das ondas com a areia.",
+      "alt": "Ondas do mar encontrando a faixa de areia, vistas do alto",
+      "src": "/assets/a-beira-mar.mp4",
+      "cover": "/assets/a-beira-mar.webp",
+      "portrait": true,
+      "duration": 22,
+      "visible": true
+    },
+    {
+      "id": "alem-do-horizonte",
+      "kind": "video",
+      "title": "Além do horizonte",
+      "category": "paisagens",
+      "detail": "",
+      "description": "Entre nuvens e montanhas, a paisagem ganha outra dimensão.",
+      "alt": "Horizonte de montanhas e uma cidade sob um céu de nuvens",
+      "src": "/assets/alem-do-horizonte.mp4",
+      "cover": "/assets/alem-do-horizonte.webp",
+      "portrait": false,
+      "duration": 14,
+      "visible": true
+    },
+    {
+      "id": "encontro-na-pista",
+      "kind": "video",
+      "title": "Encontro na pista",
+      "category": "eventos",
+      "detail": "Automotivo",
+      "description": "Uma visão do alto para guardar a dimensão de um encontro.",
+      "alt": "Vista aérea de uma pista com carros e público em meio à vegetação",
+      "src": "/assets/encontro-na-pista.mp4",
+      "cover": "/assets/encontro-na-pista.webp",
+      "portrait": false,
+      "duration": 10,
+      "visible": true
+    },
+    {
+      "id": "ritmos-da-cidade",
+      "kind": "video",
+      "title": "Ritmos da cidade",
+      "category": "paisagens",
+      "detail": "Urbano",
+      "description": "Ruas, telhados e caminhos que desenham a cidade vista de cima.",
+      "alt": "Ruas, casas e árvores de um bairro vistos de cima",
+      "src": "/assets/ritmos-da-cidade.mp4",
+      "cover": "/assets/ritmos-da-cidade.webp",
+      "portrait": false,
+      "duration": 10,
+      "visible": true
+    }
+  ]
+}
