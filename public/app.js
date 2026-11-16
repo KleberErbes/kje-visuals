@@ -108,9 +108,9 @@ function filteredFilms() {
   });
 }
 
-document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => {
+document.querySelectorAll('.portfolio .filter').forEach(button => button.addEventListener('click', () => {
   activeFilter = button.dataset.filter;
-  document.querySelectorAll('.filter').forEach(item => {
+  document.querySelectorAll('.portfolio .filter').forEach(item => {
     const selected = item === button;
     item.classList.toggle('active', selected);
     item.setAttribute('aria-pressed', String(selected));

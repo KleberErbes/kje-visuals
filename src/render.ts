@@ -10,13 +10,11 @@ function card(item: Item, index: number) {
   const seconds = Math.round(item.duration);
   const badge = photo ? "FOTO" : number(Math.floor(seconds/60))+":"+number(seconds%60);
   const action = photo ? "Ver foto" : "Assistir filme";
-  return `<article class="film-card reveal ${item.portrait?"portrait-card":""}" data-category="${item.category}" data-film="${item.id}">
+  return `<article class="film-card ${item.portrait?"portrait-card":""}" data-category="${item.category}" data-film="${item.id}">
     <button class="film-open" type="button" aria-label="${action}: ${esc(item.title)}">
-      <div class="film-image"><img src="${esc(item.cover)}" alt="${esc(item.alt || item.title)}" loading="lazy"><div class="image-shade"></div>
-      <span class="film-index">${number(index+1)}</span><span class="duration">${badge}</span>
-      <span class="play-circle" aria-hidden="true">${icon(photo?"arrow-up-right":"play")}</span>
-      <span class="watch-label">${action.toUpperCase()} ${icon("arrow-up-right")}</span></div>
-      <div class="film-info"><div><h3>${esc(item.title)}</h3><p>${esc([group(item),item.detail].filter(Boolean).join(" · ").toUpperCase())}</p></div><span class="film-info-arrow">${icon("arrow-up-right")}</span></div>
+      <div class="film-image"><img src="${esc(item.cover)}" alt="${esc(item.alt || item.title)}" loading="lazy">
+      <span class="duration">${badge}</span><span class="play-circle" aria-hidden="true">${icon(photo?"arrow-up-right":"play")}</span></div>
+      <div class="film-info"><h3>${esc(item.title)}</h3><span>${esc(item.detail || group(item))}</span>${icon("arrow-up-right")}</div>
     </button></article>`;
 }
 export function render(data: Portfolio, owner: boolean, preview: boolean, origin: string) {
@@ -27,6 +25,8 @@ export function render(data: Portfolio, owner: boolean, preview: boolean, origin
     ADMIN_LINK:owner?'<a href="/admin">Editar conteúdo</a>':"",
     HERO_SRC:esc(data.hero.src),HERO_COVER:esc(data.hero.cover),HERO_TITLE:esc(data.hero.title.toUpperCase()),
     ABOUT_SRC:esc(data.about.src), ABOUT_ALT:esc(data.about.alt),
+    PHOTO_COVER:esc(data.about.src),
+    VIDEO_COVER:esc(items.find(i=>i.kind==="video" && i.cover!==data.hero.cover)?.cover || data.hero.cover),
     TOTAL:number(items.length),LAND:number(items.filter(i=>i.category==="paisagens").length),
     EVENT:number(items.filter(i=>i.category==="eventos").length),
     COUNT:items.length + (items.length===1?" TRABALHO":" TRABALHOS"),

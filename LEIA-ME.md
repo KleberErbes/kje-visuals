@@ -1,5 +1,9 @@
 # KJE VISUALS — Vercel + Supabase
 
+## Nova interface 3.0
+
+Se seu site já está publicado, siga **ATUALIZAR-INTERFACE.md** para aplicar o novo visual no mesmo repositório. O menu da loja agora aparece na página inicial.
+
 ## Nova loja de fotos e vídeos
 
 Para ativar vendas por Pix com confirmação manual, siga **ATIVAR-LOJA.md**. A migração adicional fica em `supabase/loja.sql`; o painel da loja fica em `/admin/loja` e o catálogo em `/loja`.
